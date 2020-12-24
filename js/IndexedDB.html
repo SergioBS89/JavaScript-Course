@@ -1,0 +1,126 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    <title>IndexedDB</title>
+</head>
+<body>
+    <h1 class="h1">Indexed DB</h1>
+    <br>
+    <br>
+    <h1 class="titulo">Ejemplo simple de lista de la compra</h1>
+        <form id="form" class="form">
+            <label for="item">Introduce your items </label>
+            <input class="input" type="text" name="item">
+            <select name="priority" class="select">
+                <option value="low">Low</option>
+                <option value="normal">Normal</option>
+                <option value="hight">Hight</option>
+            </select>
+            <select name="Place" class="select">
+                <option value="Morrisons">Morrisons</option>
+                <option value="Sansburys">Sansburys</option>
+                <option value="Others">Others</option>
+   
+        </select>
+        <button class="button" id="button" name="button" data-action='add'>Add Item</button>
+    </form>
+    <br>
+    <br>
+    <h2>Shopping list</h2>
+    <div id="ShopList" class="Shopp">
+
+    </div>
+    <br>
+    <br>
+    <br>
+    <h1 class="titulo">Ejemplo de entrenamiento semanal con indexedDB</h1>
+    <br>
+    <br>
+    <form id="form2" class="form">
+        <select name="diaSemana" class="se">
+            <option value="lunes">LUNES</option>
+            <option value="martes">MARTES</option>
+            <option value="miercoles">MIERCOLES</option>
+            <option value="jueves">JUEVES</option>
+            <option value="viernes">VIERNES</option>
+            <option value="sabado">SABADO</option>
+            <option value="domingo">DOMINGO</option>
+        </select>
+        <label class="textoDia" for="musculo">DIA DE...</label>
+        <input id="in" class="in2" type="text" name="musculo" style="text-transform:uppercase" onkeyup="javascript:this.value=this.value.toUpperCase()">
+        <br>
+    <button class="button" id="but" name="but" data-action='add'>AGREGAR</button>
+</form>
+<br>
+<br>
+<table id="table" width ='400' class="one-column-emphasis">
+    <tr>
+        <td class="diaSemana">
+            LUNES
+        </td>
+        <td id="t1" class="muscle">
+            <label class="labe" type="text" name="D1">VACIO</label>
+        </td>
+
+    </tr>
+<tr >
+    <td  class="diaSemana">
+        MARTES
+    </td>
+
+    <td id="t2" class="muscle">
+        <label class="labe" type="text" name="D2">VACIO</label>
+    </td>
+</tr>
+<tr >
+  <td  class="diaSemana">
+    MIERCOLES
+  </td>
+  <td id="t3" class="muscle">
+    <label class="LA" type="text" name="D3" value="">VACIO</label>
+  </td>
+</tr>
+<tr>
+  <td  class="diaSemana">
+    JUEVES
+  </td >
+  <td id="t4" class="muscle">
+    <label class="LA" type="text" name="D4" value="">VACIO</label>
+  </td>
+</tr>
+<tr >
+  <td  class="diaSemana">
+    VIERNES
+  </td>
+  <td id="t5" class="muscle">
+    <label class="LA" type="text" name="D5" value="">VACIO</label>
+  </td>
+</tr>
+<tr >
+  <td  class="diaSemana">
+    SABADO
+  </td>
+  <td id="t6" class="muscle">
+    <label class="LA" type="text" name="D6" value="">VACIO</label>
+  </td>
+</tr>
+<tr >
+<td  class="diaSemana">
+    DOMINGO
+</td>
+<td  id="t7" class="muscle">
+    <label class="LA" type="text" name="D7" value="">VACIO</label>
+</td>
+</tr>
+</table>
+<button class="button" id="clear" name="clear">VACIAR TABLA</button>
+<br> 
+<br> 
+<br> 
+<a href="C:/Users/Monicaplz/Desktop/SERGIO_PROGRAMACION/Proyectos_ejercicios/JavaScript/Curso_JS/index.html">
+        REGRESAR AL INDEX</a>
+<script src="indexedDB.js"></script>
+</body>
+</html>

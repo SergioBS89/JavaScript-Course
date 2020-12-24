@@ -1,0 +1,193 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+    <!--Libreria de iconos para css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.min.css">
+    <title>Validar formularios, apis y mas</title>
+</head>
+<body>
+    <h1 class="h1">FORMULARIOS Y VARIAS APIS</h1>
+    <br>
+    <br>
+    <h1 class="titulo">Validacion de formulario</h1>
+    <br>
+    <form action="#" class="form" id="formul" method="post">
+        <div class="form_campo">
+            <label class="form_campo" for="name">Name</label>
+            <input type="text" id="name" name="name">
+        </div>
+        <div class="form_campo">
+            <label class="form_campo" for="email">Email</label>
+            <input type="email" id="email" name="email">
+        </div>
+        <div class="form_campo" id="genero">
+            <label for="male">Male</label>
+            <input type="radio" name="gender" value="male">
+            <label for="female">Female</label>
+            <input type="radio" name="gender" value="female">
+        </div>
+        <div class="form_campo">
+            <label for="email">I accept the terms and conditions</label>
+            <input type="checkbox" name="terms" id="terms">
+        </div>
+        <br>
+        <button type="submit" id="sub" disabled>Send</button>
+</form>
+<br>
+<br>
+<br>
+<br>
+<br>
+<br>
+<h1 class="titulo">Api Web Storage con sessionStorage()</h1>
+<br>
+<br>
+<form id="form" class="form">
+    <div>
+      <label for="key">Key</label>
+      <input type="text" id="llave" name="llave">
+    </div>
+    <div>
+      <label for="value">Value</label>
+      <input type="text" id="valor" name="valor">
+      <br>
+      <br>
+    </div>
+    <input class="infooo" type="submit" value="Save">
+  </form>
+    <div id="info">
+    <br>
+    <br>
+    <select name="keys" id="keys">
+      <option value="default">Select key</option>
+    </select>
+    <p id="infoValue"></p>
+  </div>
+  <br>
+  <br>
+  <h1 class="titulo">Segundo ejemplo sessionStorage()</h1>
+  <br>
+  <br>
+  REGISTRATE YA!
+  <br>
+  <br>
+  <form action="#" class="form" id="formular" method="post">
+    <div>
+        <label for="name">Name</label>
+        <input type="text" id="nombre" name="nombre">
+    </div>
+    <div>
+        <label  for="email">Email</label>
+        <input type="email" id="mail" name="mail">
+    </div>
+    <br>
+    <button type="submit" id="subm">Register</button>
+</form>
+  
+  <br>
+  <br>
+  <br>
+  <h1 class="titulo">Api Web Storage ejemplo LocalStorage()</h1>
+  <br>
+  <br>
+  <section class="caja" id="cajaFormulario">
+    <form name="formulario2">
+    <p><label>Clave: <input type="text" name="clave" class="clave" id="clave"></label></p>
+    <p><label>Valor: <textarea class="texto" name="texto" id="textoValor"></textarea></label></p>
+    <p><button type="button" id="guardar">Guardar</button></p>
+    </form>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <p>Datos LocalStorage: </p>
+  <section class="cajaDatos" id="cajaDatos">
+    <p></p>
+  </section>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <br>
+  <h1 class="titulo">Api Drag and Drop</h1>
+  <br>
+<div>
+  <h2>My hobbies</h2>
+ 
+    <div id="fuera" class="drop_zone">
+      
+  <img id="play" class="fcb" src="fotos/ps.png" alt="The best entertainment" draggable="true">
+  <img id="fcb" class="fcb" src="fotos/fcb.png" alt="The best team" draggable="true">
+  <img id="pc" class="fcb" src="fotos/tower.png" alt="Learning development" draggable="true">
+  </div>
+  <div id="drop_zone" class="drop_zone2" draggable="true">
+    <div></div>
+  </div>
+</div>
+  <br>
+  <br>
+  <h1 class="titulo">Api File</h1>
+  <br>
+  <h2>Subir texto</h2>
+  <input type="file" id="file">
+  <p id="Stexto"></p>
+  <br>
+  <br> 
+  <h2>Subir una o varias imagenes</h2>
+  <input type="file" id="fileB" multiple>
+  <div id="images" class="img"></div>
+  <br>
+  <br>
+    <h1 class="titulo">Barra de progreso</h1>
+    
+    <h3>Carga multiple</h3>
+   <input type="file" id="filefile" multiple>
+   <div id="load" class="load">
+     <span id="progress" class="progress"></span>
+   </div> 
+  <br>
+  <br>
+  <h1 class="titulo">Combinando api File - Drag and Drop</h1>
+  <br>
+  <form class="form5" method="post" enctype="multipart/form-data">
+    <div>
+      <input class="hide5" type="file" name="file5" id="file5" multiple />
+      <div id="dropZ" class="dropZ">
+        <i class="fas fa-file-upload"></i>
+        <p class="drop-zone__text">
+          Drop file or click to upload file
+        </p>
+        <div id="load" class="load">
+          <span id="progressoo" class="progress"></span>
+        </div> 
+      </div>
+      <input type="submit" id="upload-button" class="formbutton" value="Upload">
+  </form>
+  <br>
+  <br>
+  <h2>Imagenes subidas</h2>
+  <div id="misImg">
+    
+  </div>
+  <br>
+  <br>
+  <a href="C:/Users/Monicaplz/Desktop/SERGIO_PROGRAMACION/Proyectos_ejercicios/JavaScript/Curso_JS/index.html">
+    REGRESAR AL INDEX</a>
+<script src="form,regexp,apis.js"></script>
+</body>
+</html>

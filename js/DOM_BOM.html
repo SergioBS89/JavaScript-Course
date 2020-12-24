@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="estilos.css"/>
+</head>
+<body>
+    <h1 id='title' class='h1'>DOM Y BOM</h1>
+
+    <h1 id="titulo" class="titulo">Usando atributos y clases con JS</h1>
+    <form id="form">
+        <label for="name">Telefono</label>
+        <input id="input" class="name" type="text" value='666555444'/>
+        <input type="submit" value='enviar'/>
+    </form>
+    <h1 id="tit" class="titulo">Eventos JS</h1>
+    <a href="http://developer.mozilla.org/es/docs/Web/Events">Link hacia referencia de eventos</a>
+    <br>
+    <br>
+    <div id="gallery" class="gallery">
+        <div class="gallery_item">1</div>
+        <div class="gallery_item">2</div>
+        <div class="gallery_item">3</div>
+        <div class="gallery_item">4</div>
+        <div class="gallery_item">5</div>
+        <div class="gallery_item">6</div>
+        <div class="gallery_item">7</div>
+        <div class="gallery_item">8</div>
+        <div class="gallery_item">9</div>
+    </div>
+    <br>
+    <br>
+    <button id="pulsar" class="pulsar">Click me!!<span>Hola innerHtml</span></button>
+    
+    <h1 class="titulo">Mas ejemplos de eventos</h1>
+   
+    <div class="boton">
+     Evento mouse 
+    </div>
+    
+   <div class="textos" id="textos">
+        <p class="parrafo">
+        El Barça vive en una convulsión interminable. En una de las temporadas más complejas de su historia,
+        con crisis institucionales, económicas y deportivas, resultaría casi un milagro ganar la Liga. Por no
+        hablar de la Champions. Pero el club blaugrana es tan complejo, tan diferente, tan especial, tan único,
+         que incluso en las situaciones más inverosímiles es capaz de sorprendernos con grandes triunfos.
+         <span>Soy un elemento dentro de otro elemento</span>
+        </p>
+        <p class="parrafo">
+        No hay más que recordar lo que sucedió en la temporada 2014-15, con el enfrentamiento entre Messi y Luis
+        Enrique tras el episodio de Anoeta que acabó con el segundo triplete de la historia blaugrana. La situa-
+        ción recuerda mucho a lo sucedido hace ya cinco años, con una diferencia muy importante: este equipo ya
+        no tiene un tridente implacable y su rendimiento futbolístico está muy por debajo del que ofreció cuando
+        ganó la Copa de Europa en Berlín
+        </p>
+        <p class="parrafo">
+        La división entre Quique Setién y los futbolistas, que explotó el sábado en Vigo y quedó ‘aparcada’ el
+        lunes con la mediación de Bartomeu, es solo un síntoma más de la pésima gestión deportiva de los últimos
+        años. Es, sin duda, la culminación de un proyecto fracasado. La confirmación de un ‘fin de ciclo’ que
+        obliga a una revolución. Una renovación total de la plantilla que, lamentablemente, no podrá llevarse a
+        cabo  este verano por falta de dinero. Así, el Barça seguirá agarrándose a Messi y suplicando una
+        reacción de las ‘vacas sagradas’, que cada vez costará más de llegar.
+        </p>
+        <p class="parrafo">
+        Lo vimos anoche ante el Atlético. En un partido en el que el Barça se jugaba la Liga, los blaugranas inten-
+        taron resucitar. Se pusieron las pilas, recuperaron el ritmo y Messi se reencontró con el gol: alcanzó su
+        tanto 700 en su carrera profesional con un penalti 'a lo Panenka'. Pero no fue suficiente. En un partido
+        tan intenso como emocionante, marcado por los penaltis (tres en total), se escaparon otros dos puntos y
+        puede que también, de forma definitiva, la Liga. Este Barça no da para más...
+        </p>
+
+        
+    </div>
+        <button class = "bo" id="botonSport">Pulsame para ir a Sport.es</button> 
+        <button class = "bo" id="botonazo">Cambia el title de la pagina</button> 
+        <button class = "bo" id="botoon">Pulsa!Pulsaaa!</button> 
+        
+        <br>
+        <h1 class="titulo" id="titulo2">Crear e insertar elementos desde js</h1>
+
+        <ul id="ul-dias"></ul>
+        <br>
+        <select id="select-dias">
+        <br>
+        <br>
+        <br>
+        
+
+        </select>
+            
+           
+            <h1 class="titulo">Recorrer el DOM (Traversing DOM)</h1>    
+        <nav>
+            <ul id="parent">
+                <li>Hijo 1</li>
+                <li>Hijo 2</li>
+                <li>Hijo 3</li>
+                <ul>
+                    <li>Padre 1</li>
+                    <li>Padre 2</li>
+                    <li>Padre 3</li>
+                </ul>
+            </ul>
+        </nav>
+        <br>
+        <h1 class="titulo">Insertar y eliminar elementos</h1>
+        <ul id="lis">
+            <li>Referencia 1</li>
+            <li>Referencia 2</li>
+        </ul>
+        <br>
+        <h1 class="titulo">Manipulacion de elementos con metodos JQUERY</h1>
+        <ul id="lica">
+            <li>Puesto 1</li>
+            <li>Puesto 2</li>
+        </ul>
+        <br>
+        <h1 class="titulo">Ejercico contador de segundos en consola</h1>
+        <button id='iniciar'class="bo">Start/Pausar</button>
+        <button id='parar' class="bo">Reiniciar</button>
+        <br>
+        <br>
+        <br>
+        <div class="crono">
+            <p>
+                <span id="hor">0</span>:</span><span id="min">0</span>:<span id="seg">0</span>
+            </p>
+        </div>
+        <br>
+        <br>
+        <br>
+        <video  class="miVideo" id="miVideo" src="videos/Welcome.mp4" width="300" height="200" controls>
+        </video>
+        <video  class="dj" src="videos/dj.mp4" width="300" height="200" controls>
+        </video>
+        <br>
+        <br>
+        <br>
+        <div>
+            <div id="TituloFotos"></div>
+            <div id="messi"></div>
+            <audio id="audio" src="sonidos/aplausos.mp3"></audio>
+        </div>
+        <br>
+            <script src= "DOM_BOM.js"> </script>
+</body>
+<br>
+<br>
+<br>
+<a href='C:/Users/Monicaplz/Desktop/SERGIO_PROGRAMACION/Proyectos_ejercicios/JavaScript/Curso_JS/index.html'>
+    REGREGAR AL INDEX</a>
+
+</html>
