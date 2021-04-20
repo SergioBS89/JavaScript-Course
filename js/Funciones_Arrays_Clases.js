@@ -13,11 +13,19 @@ function aplaudir(){
 console.log(aplaudir());
 
 //Funcion con parametros
-const unAplausoPara = (nombre, apellidos) =>{
+function unAplausoPara(nombre, apellidos){
     var ole = "Un gran aplauso para " + nombre + " "+ apellidos;
     return ole;
 }
 console.log(unAplausoPara("Sergio", "Bediell Sanchez"));
+
+// Tambien podemos crear una funcion a partir de una varible
+
+let campeones = (campeon,liga)=>{
+    return "El campeon de la liga "+liga+ " es el " + campeon;
+}
+console.log(campeones("Barcelona", "Santander"));
+
 
 //Funcion inicializando parametros
 
